@@ -1,70 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maruchan Saludable</title>
+
+<title>MaruFit | Maruchan Saludable</title>
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
+
 <body>
 
+<div id="particles"></div>
+
 <nav>
-    <div class="logo">🍜 MaruFit</div>
 
-    <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#comparacion">Comparación</a></li>
-        <li><a href="#beneficios">Beneficios</a></li>
-        <li><a href="#receta">Receta</a></li>
-    </ul>
+<div class="logo">
 
-    <button id="modoBtn">🌙</button>
-</nav>
+<i class="fa-solid fa-bowl-food"></i>
 
-<header id="inicio">
-    <div class="hero-text">
-        <h1>Maruchan Saludable</h1>
-        <p>
-            La versión nutritiva de tu sopa instantánea favorita.
-        </p>
-
-        <a href="#receta" class="btn">
-            Ver receta
-        </a>
-    </div>
-</header>
-
-<section id="comparacion">
-
-<h2>Comparación Nutricional</h2>
-
-<div class="comparacion">
-
-<div class="card rojo">
-<h3>Maruchan Tradicional</h3>
-
-<ul>
-<li>⚠ Mucho sodio</li>
-<li>⚠ Conservadores</li>
-<li>⚠ Poca fibra</li>
-<li>⚠ Menos proteína</li>
-</ul>
+<span>MaruFit</span>
 
 </div>
 
-<div class="card verde">
-<h3>Maruchan Saludable</h3>
-
 <ul>
-<li>✅ Menos sodio</li>
-<li>✅ Ingredientes frescos</li>
-<li>✅ Más vitaminas</li>
-<li>✅ Más proteína</li>
+
+<li><a href="#inicio">Inicio</a></li>
+
+<li><a href="#historia">Historia</a></li>
+
+<li><a href="#beneficios">Beneficios</a></li>
+
+<li><a href="#comparacion">Comparación</a></li>
+
+<li><a href="#receta">Receta</a></li>
+
+<li><a href="#faq">FAQ</a></li>
+
 </ul>
+
+<button id="darkModeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+</nav>
+
+<header id="inicio">
+
+<div class="hero">
+
+<div class="hero-content">
+
+<h1>
+La Evolución de la
+<span>Maruchan Saludable</span>
+</h1>
+
+<p>
+
+Una alternativa nutritiva, deliciosa y moderna
+que conserva la practicidad de las sopas instantáneas
+pero con ingredientes frescos y mejor valor nutricional.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#beneficios" class="btn-primary">
+
+Descubrir
+
+</a>
+
+<a href="#receta" class="btn-secondary">
+
+Receta
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=800"
+alt="Ramen Saludable">
+
+</div>
+
+</div>
+
+</header>
+
+<section class="stats">
+
+<div class="stat-card">
+
+<h2 id="sodioCounter">0</h2>
+
+<p>mg menos de sodio</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="proteinaCounter">0</h2>
+
+<p>% más proteína</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="fibraCounter">0</h2>
+
+<p>% más fibra</p>
+
+</div>
+
+</section>
+
+<section id="historia">
+
+<h2 class="section-title">
+
+Historia de la Sopa Instantánea
+
+</h2>
+
+<div class="history-container">
+
+<div class="history-card">
+
+<i class="fa-solid fa-landmark"></i>
+
+<h3>Origen</h3>
+
+<p>
+
+Las sopas instantáneas nacieron en Japón durante
+la década de 1950 con el objetivo de ofrecer
+un alimento rápido y accesible para millones de personas.
+
+</p>
+
+</div>
+
+<div class="history-card">
+
+<i class="fa-solid fa-earth-americas"></i>
+
+<h3>Expansión Mundial</h3>
+
+<p>
+
+Actualmente se consumen miles de millones de
+porciones al año en todo el mundo.
+
+</p>
+
+</div>
+
+<div class="history-card">
+
+<i class="fa-solid fa-leaf"></i>
+
+<h3>Nueva Generación</h3>
+
+<p>
+
+Las versiones saludables buscan reducir sodio,
+grasas saturadas y conservadores.
+
+</p>
 
 </div>
 
@@ -74,68 +197,423 @@
 
 <section id="beneficios">
 
-<h2>Beneficios</h2>
+<h2 class="section-title">
 
-<div class="beneficios-grid">
+Beneficios de MaruFit
 
-<div class="beneficio">
-🥦
+</h2>
+
+<div class="benefits-grid">
+
+<div class="benefit-card">
+
+<i class="fa-solid fa-heart"></i>
+
+<h3>Salud Cardiovascular</h3>
+
+<p>
+
+Menor contenido de sodio para una alimentación equilibrada.
+
+</p>
+
+</div>
+
+<div class="benefit-card">
+
+<i class="fa-solid fa-dumbbell"></i>
+
+<h3>Más Proteína</h3>
+
+<p>
+
+Ideal para estudiantes y deportistas.
+
+</p>
+
+</div>
+
+<div class="benefit-card">
+
+<i class="fa-solid fa-carrot"></i>
+
 <h3>Vitaminas</h3>
-<p>Las verduras aportan nutrientes esenciales.</p>
+
+<p>
+
+Las verduras aportan nutrientes esenciales.
+
+</p>
+
 </div>
 
-<div class="beneficio">
-🍗
-<h3>Proteína</h3>
-<p>Pollo, tofu o huevo mejoran la calidad nutricional.</p>
+<div class="benefit-card">
+
+<i class="fa-solid fa-shield-heart"></i>
+
+<h3>Sistema Inmunológico</h3>
+
+<p>
+
+Mayor aporte de micronutrientes.
+
+</p>
+
 </div>
 
-<div class="beneficio">
-❤️
-<h3>Menos Sodio</h3>
-<p>Ayuda a mantener una alimentación equilibrada.</p>
+</div>
+
+</section>
+<section id="comparacion">
+
+<h2 class="section-title">
+Comparación Nutricional
+</h2>
+
+<div class="comparison-container">
+
+<div class="comparison-card traditional">
+
+<h3>🍜 Tradicional</h3>
+
+<div class="bar-container">
+
+<p>Sodio</p>
+
+<div class="bar red">
+<div class="fill" style="width:95%"></div>
+</div>
+
+<p>1500 mg</p>
+
+</div>
+
+<div class="bar-container">
+
+<p>Proteína</p>
+
+<div class="bar">
+<div class="fill green" style="width:35%"></div>
+</div>
+
+<p>7 g</p>
+
+</div>
+
+<div class="bar-container">
+
+<p>Fibra</p>
+
+<div class="bar">
+<div class="fill yellow" style="width:15%"></div>
+</div>
+
+<p>1 g</p>
+
+</div>
+
+</div>
+
+<div class="comparison-card healthy">
+
+<h3>🥗 MaruFit</h3>
+
+<div class="bar-container">
+
+<p>Sodio</p>
+
+<div class="bar">
+<div class="fill green" style="width:30%"></div>
+</div>
+
+<p>500 mg</p>
+
+</div>
+
+<div class="bar-container">
+
+<p>Proteína</p>
+
+<div class="bar">
+<div class="fill green" style="width:90%"></div>
+</div>
+
+<p>20 g</p>
+
+</div>
+
+<div class="bar-container">
+
+<p>Fibra</p>
+
+<div class="bar">
+<div class="fill green" style="width:80%"></div>
+</div>
+
+<p>8 g</p>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="stats">
+<section id="ingredientes">
 
-<div>
-<span id="sodio">0</span>
-<p>mg menos de sodio</p>
+<h2 class="section-title">
+Ingredientes Principales
+</h2>
+
+<div class="ingredients-grid">
+
+<div class="ingredient-card">
+🥦
+<h3>Brócoli</h3>
+<p>Fuente natural de vitaminas y minerales.</p>
 </div>
 
-<div>
-<span id="proteina">0</span>
-<p>% más proteína</p>
+<div class="ingredient-card">
+🥕
+<h3>Zanahoria</h3>
+<p>Rica en vitamina A.</p>
 </div>
 
-<div>
-<span id="fibra">0</span>
-<p>% más fibra</p>
+<div class="ingredient-card">
+🍄
+<h3>Champiñones</h3>
+<p>Bajos en calorías y ricos en nutrientes.</p>
+</div>
+
+<div class="ingredient-card">
+🥚
+<h3>Huevo</h3>
+<p>Excelente fuente de proteína.</p>
+</div>
+
+<div class="ingredient-card">
+🍗
+<h3>Pollo</h3>
+<p>Proteína magra para mayor saciedad.</p>
+</div>
+
+<div class="ingredient-card">
+🌱
+<h3>Espinaca</h3>
+<p>Hierro, calcio y antioxidantes.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<h2 class="section-title">
+Galería
+</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1555126634-323283e090fa?w=800">
+<img src="https://images.unsplash.com/photo-1618889482923-38250401a84e?w=800">
+<img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=800">
+<img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=800">
+
+</div>
+
+</section>
+
+<section id="calculadora">
+
+<h2 class="section-title">
+Calculadora de Sodio
+</h2>
+
+<div class="calculator">
+
+<input
+type="number"
+id="cantidad"
+placeholder="¿Cuántas sopas consumes al mes?">
+
+<button onclick="calcularAhorro()">
+Calcular
+</button>
+
+<div id="resultado"></div>
+
+</div>
+
+</section>
+
+<section id="quiz">
+
+<h2 class="section-title">
+Test Nutricional
+</h2>
+
+<div class="quiz-box">
+
+<p>
+¿Tu sopa incluye verduras?
+</p>
+
+<button onclick="sumarPuntos(1)">
+Sí
+</button>
+
+<button onclick="sumarPuntos(0)">
+No
+</button>
+
+<p>
+¿Incluye proteína?
+</p>
+
+<button onclick="sumarPuntos(1)">
+Sí
+</button>
+
+<button onclick="sumarPuntos(0)">
+No
+</button>
+
+<p>
+¿Usas poco sazonador?
+</p>
+
+<button onclick="sumarPuntos(1)">
+Sí
+</button>
+
+<button onclick="sumarPuntos(0)">
+No
+</button>
+
+<button class="finalizar"
+onclick="mostrarResultadoQuiz()">
+
+Ver resultado
+
+</button>
+
+<div id="quizResultado"></div>
+
 </div>
 
 </section>
 
 <section id="receta">
 
-<h2>Receta Saludable</h2>
+<h2 class="section-title">
+Receta Saludable
+</h2>
 
-<button onclick="mostrarReceta()">
-Mostrar receta
-</button>
+<div class="recipe-container">
 
-<div id="recetaBox"></div>
+<div class="step">
+<h3>Paso 1</h3>
+<p>Hervir agua.</p>
+</div>
+
+<div class="step">
+<h3>Paso 2</h3>
+<p>Agregar verduras frescas.</p>
+</div>
+
+<div class="step">
+<h3>Paso 3</h3>
+<p>Añadir proteína.</p>
+</div>
+
+<div class="step">
+<h3>Paso 4</h3>
+<p>Servir y disfrutar.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="faq">
+
+<h2 class="section-title">
+Preguntas Frecuentes
+</h2>
+
+<div class="faq-container">
+
+<details>
+
+<summary>
+¿Es saludable comer sopa instantánea todos los días?
+</summary>
+
+<p>
+Se recomienda variar la alimentación y consumirla con moderación.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+¿Cómo reducir el sodio?
+</summary>
+
+<p>
+Utilizando menos sazonador y añadiendo ingredientes frescos.
+</p>
+
+</details>
+
+<details>
+
+<summary>
+¿Puedo usar tofu?
+</summary>
+
+<p>
+Sí, es una excelente fuente de proteína vegetal.
+</p>
+
+</details>
+
+</div>
 
 </section>
 
 <footer>
 
-<h3>Proyecto MaruFit 2026</h3>
+<div class="footer-content">
 
-<p>Comer rico también puede ser saludable.</p>
+<h2>🍜 MaruFit</h2>
+
+<p>
+Comer saludable no significa dejar de disfrutar.
+</p>
+
+<div class="socials">
+
+<i class="fab fa-facebook"></i>
+
+<i class="fab fa-instagram"></i>
+
+<i class="fab fa-x-twitter"></i>
+
+<i class="fab fa-youtube"></i>
+
+</div>
+
+<p class="copyright">
+
+© 2026 MaruFit
+
+</p>
+
+</div>
 
 </footer>
 
