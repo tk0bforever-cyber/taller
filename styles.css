@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f7f2;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#2e7d32,#66bb6a);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.hero{
+    text-align:center;
+    padding:30px;
+}
+
+.info{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    width:250px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.beneficios{
+    background:#dcedc8;
+    padding:30px;
+}
+
+.beneficios ul{
+    list-style:none;
+    font-size:18px;
+}
+
+.calculadora{
+    text-align:center;
+    padding:40px;
+}
+
+input{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #999;
+}
+
+button{
+    padding:10px 20px;
+    background:#43a047;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2e7d32;
+}
+
+footer{
+    text-align:center;
+    background:#1b5e20;
+    color:white;
+    padding:15px;
+}
