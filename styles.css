@@ -1,190 +1,42 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-}
-
-body{
-background:#f4f8f5;
-color:#222;
-transition:.4s;
-}
-
-body.dark{
-background:#121212;
-color:white;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-backdrop-filter:blur(10px);
-background:rgba(255,255,255,.6);
-position:fixed;
-width:100%;
-z-index:100;
-}
-
-.dark nav{
-background:rgba(20,20,20,.8);
-}
-
-.logo{
-font-size:1.5rem;
-font-weight:700;
-color:#2e7d32;
-}
-
-nav ul{
-display:flex;
-gap:20px;
-list-style:none;
-}
-
-nav a{
-text-decoration:none;
-color:inherit;
-font-weight:600;
-}
-
-#modoBtn{
-border:none;
-padding:10px;
-border-radius:50%;
-cursor:pointer;
-}
-
-header{
+.hero{
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-text-align:center;
+
 background:
-linear-gradient(rgba(0,0,0,.4),
-rgba(0,0,0,.4)),
-url("https://images.unsplash.com/photo-1612929633738-8fe44f7ec841");
-background-size:cover;
-background-position:center;
-color:white;
+linear-gradient(
+135deg,
+#56ab2f,
+#a8e063,
+#f7b733
+);
+
+overflow:hidden;
 }
 
-.hero-text h1{
-font-size:4rem;
-}
-
-.hero-text p{
-font-size:1.2rem;
-margin:20px 0;
-}
-
-.btn{
-background:#4caf50;
-padding:15px 30px;
+.glass{
+backdrop-filter:blur(20px);
+background:rgba(255,255,255,.15);
+padding:50px;
 border-radius:30px;
-text-decoration:none;
-color:white;
-font-weight:600;
-}
+border:1px solid rgba(255,255,255,.3);
+box-shadow:
+0 8px 32px rgba(0,0,0,.2);
 
-section{
-padding:100px 10%;
-}
-
-h2{
 text-align:center;
-margin-bottom:40px;
-font-size:2.5rem;
 }
 
-.comparacion{
-display:flex;
-gap:30px;
-justify-content:center;
-flex-wrap:wrap;
+.glass h1{
+font-size:5rem;
 }
 
-.card{
-width:320px;
-padding:30px;
-border-radius:20px;
-background:white;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
-}
-
-.dark .card{
-background:#1f1f1f;
-}
-
-.rojo{
-border-top:8px solid #e53935;
-}
-
-.verde{
-border-top:8px solid #43a047;
-}
-
-.card ul{
+.glass button{
 margin-top:20px;
-line-height:2;
-}
-
-.beneficios-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.beneficio{
-padding:30px;
-text-align:center;
-background:white;
-border-radius:20px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.dark .beneficio{
-background:#1f1f1f;
-}
-
-.stats{
-display:flex;
-justify-content:space-around;
-text-align:center;
-background:#4caf50;
-color:white;
-}
-
-.stats span{
-font-size:3rem;
-font-weight:bold;
-}
-
-#receta{
-text-align:center;
-}
-
-#receta button{
-padding:15px 30px;
+padding:15px 35px;
 border:none;
-background:#43a047;
-color:white;
-border-radius:10px;
+border-radius:50px;
+background:white;
+font-weight:bold;
 cursor:pointer;
-}
-
-#recetaBox{
-margin-top:30px;
-font-size:1.1rem;
-line-height:2;
-}
-
-footer{
-background:#1b5e20;
-color:white;
-text-align:center;
-padding:40px;
 }
